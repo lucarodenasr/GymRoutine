@@ -20,4 +20,25 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 1.2rem !important;
+  }
+  button {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  body {
+    font-size: 10px !important;
+  }
+  button {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
 }

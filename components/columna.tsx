@@ -9,17 +9,17 @@ interface ColumnaProps {
 export default function Columna({ t, value, onChange }: ColumnaProps) {
   return (
     <div
-      className={`flex flex-col border p-2 ${
-        t === "Ejercicio" ? "w-70" : "w-30"
+      className={`flex flex-col ${
+        t === "Ejercicio" ? "w-[37vw]" : "w-[12vw]"
       }`}
     >
       <input
         type="text"
-        maxLength={t === "Ejercicio" ? 30 : 9}
+        maxLength={t === "Ejercicio" ? 30 : 5}
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={t}
-        className="py-1 text-center outline-none"
+        className="border py-2 px-2 text-center outline-none"
       />
     </div>
   );

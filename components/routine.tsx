@@ -120,7 +120,7 @@ export default function Routine() {
   };
 
   return (
-    <div className="space-y-6 p-6 flex flex-col items-center">
+    <div className="space-y-6 flex flex-col items-center">
       {dias.map((dia) => (
         <Dia
           key={dia.id}
@@ -135,7 +135,7 @@ export default function Routine() {
 
       <button
         onClick={agregarDia}
-        className="w-12 h-12 flex items-center justify-center text-white font-bold text-2xl rounded-full shadow bg-gray-900"
+        className="w-8 h-8 ml-4 flex items-center justify-center text-white font-bold text-xl rounded-full shadow bg-gray-900 active:scale-95 transition"
       >
         +
       </button>
